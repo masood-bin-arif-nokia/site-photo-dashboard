@@ -7,6 +7,7 @@ from itsdangerous import URLSafeTimedSerializer, BadSignature
 # AUTH CONFIG (WEEKLY TOKEN)
 # ======================================================
 SECRET_KEY = "MY_SUPER_SECRET_KEY_2026"
+
 TOKEN_EXPIRY_SECONDS = 7 * 24 * 60 * 60  # 7 days
 
 serializer = URLSafeTimedSerializer(SECRET_KEY)
@@ -164,3 +165,4 @@ for _, row in filtered.iterrows():
         </div>
     </div>
     """, unsafe_allow_html=True)
+
